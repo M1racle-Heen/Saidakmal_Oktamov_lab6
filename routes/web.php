@@ -21,11 +21,10 @@ Route::get('/test', function () {
     return 'Web programming: back end';
 });
 
-Route::get('/post/{id?}', function ($id = 999) {
-    return "Your ID is: ".$id;
-})->where('id','[\d]+');
-
-
+Route::get('/user/{name?}/{lname?}', function ($name = "Azamat",$lname = "Oktamov") {
+    return 'Your name is '.$name." ".$lname;
+});
+/*
 Route::get('/redirect-example', function () {
     return redirect("/test");
 });
@@ -40,4 +39,4 @@ Route::get('/user/{name?}', function ($name = "Azamat") {
 Route::get('/user/{name}', function () {
     return $name;
 });
-Route::resource('/student','TeacherController');
+Route::resource('/student','TeacherController');*/
