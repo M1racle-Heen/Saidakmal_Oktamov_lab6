@@ -1,3 +1,3 @@
 <?php  
-echo "Our result is ".$my_result;
+echo "Our result is ".$name;
 ?>
