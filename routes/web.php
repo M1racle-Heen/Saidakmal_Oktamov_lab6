@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Student;
+use App\Models\Student;
 use App\Http\Controllers\LolController;
 
 /*
